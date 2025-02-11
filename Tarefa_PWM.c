@@ -1,8 +1,8 @@
-#include <stdio.h> // Biblioteca padrão da linguagem C
-#include "pico/stdlib.h" // Biblioteca central do SDK Pico
+#include <stdio.h> 
+#include "pico/stdlib.h" 
 #include "hardware/pwm.h" // Biblioteca para controle de PWM
 
-#define PWM_SERVO 22 // Pino do SERVO conectado à GPIO como PWM
+#define PWM_SERVO 22 // Pino do SERVO conectado à GPIO como PWM (22) Caso for testar na Placa BitDogLab, modificar para o pino 12 
 const uint16_t WRAP_PERIOD = 20000; // Valor máximo do contador - WRAP
 const float PWM_DIVISER = 125.0; // Divisor do clock para o PWM
 const uint16_t SERVO_STEP = 5; // Passo de incremento/decremento para o duty cycle do SERVO
@@ -49,7 +49,7 @@ int main() {
             if (SERVO_LEVEL >= 2400) // Limita ao valor máximo permitido
                 up_down = 0; // Muda direção para diminuir
         } else {
-            SERVO_LEVEL -= SERVO_STEP; // Decrementa o nível do SERVO
+            SERVO_LEVEL -= SERVO_STEP; // Decrementa o nível do servomotor
             if (SERVO_LEVEL <= 500) // Limita ao valor mínimo permitido
                 up_down = 1; // Muda direção para aumentar
         }
