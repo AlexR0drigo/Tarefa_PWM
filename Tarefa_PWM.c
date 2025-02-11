@@ -19,7 +19,7 @@ void pwm_setup() {
 }
 
 int main() {
-    stdio_init_all(); // Inicializa o sistema padrão de I/O
+    stdio_init_all(); 
     pwm_setup(); // Configura o PWM
 
     uint up_down = 1; // Variável para controlar se o nível do SERVO aumenta ou diminui
@@ -37,7 +37,8 @@ int main() {
     pwm_set_gpio_level(PWM_SERVO, 500);
     sleep_ms(5000);
 
-    // Loop principal para aumentar e diminuir o brilho gradualmente/ aumentar e deminuir grau do servo gradualemten
+    printf("Iniciando movimento entre 0 e 180 graus...\n");
+    // Loop principal para aumentar e deminuir grau do servo gradualemte (Com o led, aumenta e diminui sua intensidade)
     while (true) {
 
         pwm_set_gpio_level(PWM_SERVO, SERVO_LEVEL); // Atualiza o duty cycle
