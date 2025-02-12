@@ -10,11 +10,9 @@ Servomotor: Motor micro servo padrão (Wokwi)
 
 ## Funcionalidades Implementadas
 
-Configuração do PWM
-
 GPIO 22 configurada com frequência de 50Hz (período de 20ms).
 
-Controle de Posição do Servomotor
+Controle de Posição do Servomotor para:
 
 180 graus: Ciclo ativo de 2400µs (Duty Cycle de 0,12%) → Aguarda 5s.
 
@@ -22,11 +20,7 @@ Controle de Posição do Servomotor
 
 0 graus: Ciclo ativo de 500µs (Duty Cycle de 0,025%) → Aguarda 5s.
 
-Rotina de movimentação suave
-
 Rotina para movimentação entre 0 e 180 graus, com incrementos de ±5µs a cada 10ms.
-
-Experimento com LED RGB
 
 E para testes, utilização da GPIO 12 para avaliar o comportamento da iluminação do LED RGB com BitDogLab.
 
