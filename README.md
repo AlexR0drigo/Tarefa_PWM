@@ -42,7 +42,7 @@ Aperte o botão play no canto superior esquerdo e agora você pode interagir com
 
 ## Link para video demonstração:
 
-[DRIVE](https://drive.google.com/drive/u/4/folders/1TW-0zyrKWxDmwOV1_yGmCA-ZwnncRgmx)
+[DRIVE](https://drive.google.com/drive/folders/1TW-0zyrKWxDmwOV1_yGmCA-ZwnncRgmx?usp=sharing)
 
 # Projeto por : Alex Rodrigo Porto Barbosa
 
